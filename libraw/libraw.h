@@ -349,6 +349,10 @@ public:
 
   void set_dng_host(void *);
 
+  libraw_internal_data_t* internal_data() {
+	return &libraw_internal_data;
+  }
+
 protected:
   static void *memmem(char *haystack, size_t haystacklen, char *needle,
                       size_t needlelen);

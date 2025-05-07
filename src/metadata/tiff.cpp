@@ -2225,7 +2225,7 @@ void LibRaw::apply_tiff()
         load_flags = (((INT64(raw_width) * 3ULL / 2ULL) + 15ULL) / 16ULL) *
                      16ULL; // bytes per row
       }
-      else if ((!strncmp(model, "NIKON Z 9", 9) || !strncmp(model, "NIKON Z 8", 9) || !strcmp(model, "NIKON Z f")) &&
+      else if (0 && (!strncmp(model, "NIKON Z 9", 9) || !strncmp(model, "NIKON Z 8", 9) || !strcmp(model, "NIKON Z f")) &&
                tiff_ifd[raw].offset)
       {
           INT64 pos = ftell(ifp);
