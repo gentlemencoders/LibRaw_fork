@@ -110,9 +110,11 @@ void LibRaw::setCanonBodyFeatures(unsigned long long id)
   }
   else if (
               (id == CanonID_EOS_R)
+		   || (id == CanonID_EOS_R1) // EOS R1 AJS 2024-08-06
            || (id == CanonID_EOS_RP)
            || (id == CanonID_EOS_R3)
            || (id == CanonID_EOS_R5)
+		   || (id == CanonID_EOS_R5m2)
            || (id == CanonID_EOS_R5_C)
            || (id == CanonID_EOS_R6)
            || (id == CanonID_EOS_R6m2)
